@@ -77,6 +77,56 @@
       object-fit: cover;
       border-radius: 8px;
     }
+
+    /* Media Queries for Mobile Devices */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5em; /* Slightly smaller for mobile */
+      }
+      .section {
+        padding: 20px;
+      }
+      h2 {
+        font-size: 1.8em; /* Adjust heading size */
+      }
+      /* For images and text blocks on smaller screens */
+      .text-with-image, 
+      .image-left {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .text-with-image img, 
+      .image-left img {
+        width: 100%; /* Ensure images take full width on mobile */
+        margin-bottom: 20px;
+      }
+      .text-with-image .content,
+      .image-left .content {
+        width: 100%;
+      }
+      .image-left {
+        justify-content: flex-start;
+      }
+      .image-full img {
+        max-height: 300px;
+      }
+    }
+
+    /* Extra responsiveness for very small devices (phones) */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2em; /* Further reduce font size */
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+      .section {
+        padding: 15px;
+      }
+      .image-full img {
+        max-height: 250px;
+      }
+    }
   </style>
 </head>
 <body>
