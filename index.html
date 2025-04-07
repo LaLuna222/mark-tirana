@@ -78,51 +78,66 @@
       border-radius: 8px;
     }
 
-    /* Media Queries for Mobile Devices */
+    /* Mobile-specific adjustments */
     @media (max-width: 768px) {
       h1 {
         font-size: 2.5em; /* Slightly smaller for mobile */
       }
-      .section {
-        padding: 20px;
+
+      /* Adjusting the size of the logo in the header specifically for mobile */
+      header .image-center img {
+        width: 50%; /* Reduce the width of the image to 50% on mobile */
+        height: auto; /* Maintain the aspect ratio */
       }
+
       h2 {
         font-size: 1.8em; /* Adjust heading size */
       }
-      /* For images and text blocks on smaller screens */
+
+      .section {
+        padding: 20px;
+      }
+
       .text-with-image, 
       .image-left {
-        flex-direction: column;
+        flex-direction: column; /* Stack content vertically on small screens */
         align-items: flex-start;
       }
+
       .text-with-image img, 
       .image-left img {
         width: 100%; /* Ensure images take full width on mobile */
         margin-bottom: 20px;
       }
+
       .text-with-image .content,
       .image-left .content {
-        width: 100%;
+        width: 100%; /* Content spans the full width */
       }
+
       .image-left {
         justify-content: flex-start;
       }
+
       .image-full img {
         max-height: 300px;
       }
     }
 
-    /* Extra responsiveness for very small devices (phones) */
+    /* Adjustments for very small mobile screens */
     @media (max-width: 480px) {
       h1 {
-        font-size: 2em; /* Further reduce font size */
+        font-size: 2em; /* Reduce font size further on small screens */
       }
+
       h2 {
         font-size: 1.5em;
       }
+
       .section {
         padding: 15px;
       }
+
       .image-full img {
         max-height: 250px;
       }
