@@ -4,3 +4,19 @@ body{
 .title {
 	color: #5C6AC4;
 }
+<style>
+  /* Keep the existing styles for the body, header, and other sections as they are */
+
+  /* Mobile-specific adjustments */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5em; /* Slightly smaller for mobile */
+    }
+
+    /* Adjusting the size of the logo in the header specifically for mobile */
+    header .image-center img {
+      width: 50%; /* Reduce the width of the image to 50% on mobile */
+      height: auto; /* Maintain the aspect ratio */
+    }
+  }
+</style>
